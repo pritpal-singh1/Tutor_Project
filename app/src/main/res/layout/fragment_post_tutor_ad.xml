@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostTutorAd"
+    android:background="@color/grey">
+
+    <!-- TODO: Update blank fragment layout -->
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <com.google.android.material.card.MaterialCardView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              app:cardCornerRadius="2dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/title"
+                        android:layout_height="30dp">
+
+                    </ImageView>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Post Title *"
+                      android:textSize="20sp" />
+                </LinearLayout>
+
+                  <com.google.android.material.textfield.TextInputLayout
+
+                      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginRight="10dp"
+                      android:hint="Enter Post Title">
+
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:id="@+id/t_title"
+                          android:inputType="textMultiLine"
+                          android:lines="4"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content" />
+
+                  </com.google.android.material.textfield.TextInputLayout>
+              </LinearLayout>
+          </com.google.android.material.card.MaterialCardView>
+
+
+
+
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="2dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_margin="10dp">
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/category"
+                  android:layout_height="30dp">
+
+              </ImageView>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Category"
+
+              android:textSize="20sp"
+              android:layout_marginLeft="10dp"/>
+          </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Select Category"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+              <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                  android:id="@+id/t_category"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:enabled="false"
+                  android:cursorVisible="false"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/cls"
+                  android:layout_height="30dp">
+
+              </ImageView>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Class"
+
+                  android:textSize="20sp"
+                  android:layout_marginLeft="10dp"/>
+          </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter Class"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/t_class"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/subject"
+                  android:layout_height="30dp">
+
+              </ImageView>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Subject"
+                  android:textSize="20sp"
+                  android:layout_marginLeft="10dp"/>
+          </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter Subject"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <MultiAutoCompleteTextView
+                  android:id="@+id/t_subject"
+                  android:padding="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:ems="10"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+      </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+          <com.google.android.material.card.MaterialCardView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              app:cardCornerRadius="2dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="10dp">
+                  <LinearLayout
+                      android:layout_marginTop="10dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+                      <ImageView
+                          android:layout_width="30dp"
+                          android:layout_marginRight="10dp"
+                          android:src="@drawable/datetime"
+                          android:layout_height="30dp">
+
+                      </ImageView>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Set Days"
+
+                          android:textSize="20sp"
+                          android:layout_marginLeft="10dp"/>
+                  </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/t_setdays"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Select Days"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+              <AutoCompleteTextView
+                  android:id="@+id/t_days"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:enabled="false"
+                  android:cursorVisible="false"
+                  android:inputType="number" />
+
+
+          </com.google.android.material.textfield.TextInputLayout>
+      </LinearLayout>
+  </com.google.android.material.card.MaterialCardView>
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="2dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_margin="10dp">
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/state"
+                  android:layout_height="30dp">
+
+              </ImageView>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="State"
+
+                  android:textSize="20sp"
+                  android:layout_marginLeft="10dp"/>
+          </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter State"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <AutoCompleteTextView
+
+                  android:padding="10dp"
+                  android:id="@+id/actState"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/city"
+                  android:layout_height="30dp">
+
+              </ImageView>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="City"
+                  android:textSize="20sp"
+                  android:layout_marginLeft="10dp"/>
+          </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter City"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <AutoCompleteTextView
+                  android:id="@+id/t_city"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:padding="10dp"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/address"
+                  android:layout_height="30dp">
+
+              </ImageView>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Address"
+
+                  android:textSize="20sp"
+                  android:layout_marginLeft="10dp"/>
+          </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter Address"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/t_address"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textMultiLine"
+                  android:lines="4"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+      </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+          <com.google.android.material.card.MaterialCardView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              app:cardCornerRadius="2dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="10dp">
+                  <LinearLayout
+                      android:layout_marginTop="10dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+                      <ImageView
+                          android:layout_width="30dp"
+                          android:layout_marginRight="10dp"
+                          android:src="@drawable/count"
+                          android:layout_height="30dp">
+
+                      </ImageView>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="How many"
+
+                          android:textSize="20sp"
+                          android:layout_marginLeft="10dp"/>
+                  </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="How Many"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/t_noofstudents"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+                  <LinearLayout
+                      android:layout_marginTop="10dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+                      <ImageView
+                          android:layout_width="30dp"
+                          android:layout_marginRight="10dp"
+                          android:src="@drawable/fees"
+                          android:layout_height="30dp">
+
+                      </ImageView>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Salary"
+
+                          android:textSize="20sp"
+                          android:layout_marginLeft="10dp"/>
+                  </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter Salary"
+              android:layout_marginLeft="10dp"
+
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/t_salary"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+                  <LinearLayout
+                      android:layout_marginTop="10dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+                      <ImageView
+                          android:layout_width="30dp"
+                          android:layout_marginRight="10dp"
+                          android:src="@drawable/contact"
+                          android:layout_height="30dp">
+
+                      </ImageView>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Contact"
+
+                          android:textSize="20sp"
+                          android:layout_marginLeft="10dp"/>
+                  </LinearLayout>
+          <com.google.android.material.textfield.TextInputLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter Contact"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/t_contact"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+      </LinearLayout>
+  </com.google.android.material.card.MaterialCardView>
+
+          <Button
+              android:id="@+id/save_post_tutor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Post"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_gravity="center_horizontal"
+              />
+      </LinearLayout>
+
+
+  </ScrollView>
+
+</FrameLayout>

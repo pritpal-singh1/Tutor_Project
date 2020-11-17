@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tutor_project.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.tutor_project.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.tutor_project.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/studentProfile"
+        android:name="com.example.tutor_project.StudentProfile"
+        android:label="Create post to find Student"
+        tools:layout="@layout/fragment_student_profile" />
+    <fragment
+        android:id="@+id/postStudentAd"
+        android:name="com.example.tutor_project.PostStudentAd"
+        android:label="Create post to find Student"
+        tools:layout="@layout/fragment_post_student_ad" />
+    <fragment
+        android:id="@+id/postTutorAd"
+        android:name="com.example.tutor_project.PostTutorAd"
+        android:label="Create post to find a Tutor"
+        tools:layout="@layout/fragment_post_tutor_ad" />
+    <fragment
+        android:id="@+id/studentAds"
+        android:name="com.example.tutor_project.StudentAds"
+        android:label="fragment_student_ads"
+        tools:layout="@layout/fragment_student_ads" />
+    <fragment
+        android:id="@+id/tutorAds"
+        android:name="com.example.tutor_project.TutorAds"
+        android:label="fragment_tutor_ads"
+        tools:layout="@layout/fragment_tutor_ads" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.example.tutor_project.ChatListFragment"
+        android:label="View your Chats"
+        tools:layout="@layout/fragment_chat_list" />
+
+</navigation>
